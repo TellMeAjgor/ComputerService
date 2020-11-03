@@ -34,5 +34,11 @@ namespace ComputerServiceMainApi.Reporitories.ComputerRepositories
             var computers = await _context.Computers.ToListAsync();
             return _mapper.Map<IEnumerable<ComputerInformation>>(computers);
         }
+
+        public async Task<ComputerInformation> GetComputer(int Id)
+        {
+            var computer = await _context.Computers.FirstOrDefaultAsync(x => x.ComputerId == Id);
+            return _mapper.Map<ComputerInformation>(computer);
+        }
     }
 }
