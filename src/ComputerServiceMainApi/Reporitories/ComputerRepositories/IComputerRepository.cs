@@ -10,5 +10,6 @@ namespace ComputerServiceMainApi.Reporitories.ComputerRepositories
     {
         Task AddComputer(ComputerInformation computerInformation);
         Task<IEnumerable<ComputerInformation>> GetComputers();
+        Task<ComputerInformation> GetComputer(int Id);
     }
 }
