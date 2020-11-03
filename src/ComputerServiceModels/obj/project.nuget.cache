@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "RiB9CKwjNGXvLVFBLfaqJ5i/1e9nMLzBZKv/fFNgQWBBuDRALIP20Wk1egY1HFzvdEDsCoejxJSPY8yYtGXxcg==",
+  "dgSpecHash": "RJIBa7mTft8W1dsoBSGqABuF8dFVM+imsqEHM/XFiPVclTYgl0hTAL/V0y+1vqIfuXGg6YUTUQBinjq5zpdtGg==",
   "success": true,
   "projectFilePath": "C:\\Projekty\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\PC\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\automapper.extensions.expressionmapping\\4.0.2\\automapper.extensions.expressionmapping.4.0.2.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
