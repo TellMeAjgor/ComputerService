@@ -1,0 +1,9 @@
+C:\Projekty\ComputerService\src\ComputerServiceModels\bin\Debug\netstandard2.0\ComputerServiceModels.deps.json
+C:\Projekty\ComputerService\src\ComputerServiceModels\bin\Debug\netstandard2.0\ComputerServiceModels.dll
+C:\Projekty\ComputerService\src\ComputerServiceModels\obj\Debug\netstandard2.0\ComputerServiceModels.csprojAssemblyReference.cache
+C:\Projekty\ComputerService\src\ComputerServiceModels\obj\Debug\netstandard2.0\ComputerServiceModels.AssemblyInfoInputs.cache
+C:\Projekty\ComputerService\src\ComputerServiceModels\obj\Debug\netstandard2.0\ComputerServiceModels.AssemblyInfo.cs
+C:\Projekty\ComputerService\src\ComputerServiceModels\bin\Debug\netstandard2.0\ComputerServiceModels.pdb
+C:\Projekty\ComputerService\src\ComputerServiceModels\obj\Debug\netstandard2.0\ComputerServiceModels.csproj.CoreCompileInputs.cache
+C:\Projekty\ComputerService\src\ComputerServiceModels\obj\Debug\netstandard2.0\ComputerServiceModels.dll
+C:\Projekty\ComputerService\src\ComputerServiceModels\obj\Debug\netstandard2.0\ComputerServiceModels.pdb

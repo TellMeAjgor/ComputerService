@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Entities\" />
-    <Folder Include="Models\Informations\" />
+    <PackageReference Include="AutoMapper.Extensions.ExpressionMapping" Version="4.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
   </ItemGroup>
 
 </Project>
