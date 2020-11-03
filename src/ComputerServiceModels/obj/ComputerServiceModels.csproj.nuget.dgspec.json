@@ -38,9 +38,9 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
-            "AutoMapper.Extensions.ExpressionMapping": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[4.0.2, )"
+              "version": "[8.1.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

@@ -8,10 +8,10 @@ namespace ComputerServiceModels.Models.Informations
     {
         public int ComputerId { get; set; }
         public string Cpu { get; set; }
-        public int Ram { get; set; }
+        public string Ram { get; set; }
         public string Gpu { get; set; }
         public string Case { get; set; }
-        public int Psu { get; set; }
+        public string Psu { get; set; }
         public string Motherboard { get; set; }
         public string Os { get; set; }
     }
