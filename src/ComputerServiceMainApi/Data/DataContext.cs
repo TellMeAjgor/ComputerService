@@ -11,5 +11,6 @@ namespace ComputerServiceMainApi.Data
     {
         public DataContext(DbContextOptions options) : base(options) { }
         public DbSet<Computer> Computers { get; set; }
+        public DbSet<Owner> Owners { get; set; }
     }
 }

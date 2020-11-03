@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using AutoMapper;
 using ComputerServiceMainApi.Data;
@@ -35,9 +36,9 @@ namespace ComputerServiceMainApi.Reporitories.ComputerRepositories
             return _mapper.Map<IEnumerable<ComputerInformation>>(computers);
         }
 
-        public async Task<ComputerInformation> GetComputer(int Id)
+        public async Task<ComputerInformation> GetComputer(int id)
         {
-            var computer = await _context.Computers.FirstOrDefaultAsync(x => x.ComputerId == Id);
+            var computer = await _context.Computers.FirstOrDefaultAsync(x => x.ComputerId == id);
             return _mapper.Map<ComputerInformation>(computer);
         }
     }

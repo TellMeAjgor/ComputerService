@@ -34,9 +34,9 @@ namespace ComputerServiceMainApi.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetComputer(int Id)
+        public async Task<IActionResult> GetComputer(int id)
         {
-            var computer = await _repository.GetComputer(Id);
+            var computer = await _repository.GetComputer(id);
             return Ok(computer);
         }
     }

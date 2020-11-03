@@ -13,6 +13,7 @@ namespace ComputerServiceMainApi.MappingProfile
         public AutoMapperProfile()
         {
             CreateMap<Computer, ComputerInformation>().ReverseMap();
+            CreateMap<Owner, OwnerInformation>().ReverseMap();
         }
     }
 }
