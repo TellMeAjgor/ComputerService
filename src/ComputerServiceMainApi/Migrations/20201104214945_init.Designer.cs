@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ComputerServiceMainApi.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20201103193123_init")]
+    [Migration("20201104214945_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,15 +42,50 @@ namespace ComputerServiceMainApi.Migrations
                     b.Property<string>("Os")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Psu")
+                    b.Property<int>("OwnerId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Ram")
-                        .HasColumnType("int");
+                    b.Property<string>("Psu")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Ram")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ComputerId");
 
+                    b.HasIndex("OwnerId");
+
                     b.ToTable("Computers");
+                });
+
+            modelBuilder.Entity("ComputerServiceModels.Models.Entities.Owner", b =>
+                {
+                    b.Property<int>("OwnerId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("OwnerId");
+
+                    b.ToTable("Owners");
+                });
+
+            modelBuilder.Entity("ComputerServiceModels.Models.Entities.Computer", b =>
+                {
+                    b.HasOne("ComputerServiceModels.Models.Entities.Owner", "Owner")
+                        .WithMany()
+                        .HasForeignKey("OwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

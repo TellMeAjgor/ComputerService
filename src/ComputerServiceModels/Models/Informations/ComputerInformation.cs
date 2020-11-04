@@ -14,5 +14,7 @@ namespace ComputerServiceModels.Models.Informations
         public string Psu { get; set; }
         public string Motherboard { get; set; }
         public string Os { get; set; }
+        public int OwnerId { get; set; }
+        public OwnerInformation OwnerInformation { get; set; }
     }
 }
