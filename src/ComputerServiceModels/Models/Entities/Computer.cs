@@ -16,5 +16,7 @@ namespace ComputerServiceModels.Models.Entities
         public string Psu { get; set; }
         public string Motherboard { get; set; }
         public string Os { get; set; }
+        public int OwnerId { get; set; }
+        public virtual Owner Owner { get; set; }
     }
 }

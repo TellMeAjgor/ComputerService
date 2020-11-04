@@ -40,6 +40,9 @@ namespace ComputerServiceMainApi.Migrations
                     b.Property<string>("Os")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("OwnerId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Psu")
                         .HasColumnType("nvarchar(max)");
 
@@ -47,6 +50,8 @@ namespace ComputerServiceMainApi.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ComputerId");
+
+                    b.HasIndex("OwnerId");
 
                     b.ToTable("Computers");
                 });
@@ -70,6 +75,15 @@ namespace ComputerServiceMainApi.Migrations
                     b.HasKey("OwnerId");
 
                     b.ToTable("Owners");
+                });
+
+            modelBuilder.Entity("ComputerServiceModels.Models.Entities.Computer", b =>
+                {
+                    b.HasOne("ComputerServiceModels.Models.Entities.Owner", "Owner")
+                        .WithMany()
+                        .HasForeignKey("OwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
