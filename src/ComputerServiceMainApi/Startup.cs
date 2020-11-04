@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using ComputerServiceMainApi.Data;
 using ComputerServiceMainApi.Reporitories.ComputerRepositories;
+using ComputerServiceMainApi.Reporitories.OwnerRepositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -31,6 +32,7 @@ namespace ComputerServiceMainApi
             services.AddControllers();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddTransient<IComputerRepository, ComputerRepository>();
+            services.AddTransient<IOwnerRepository, OwnerRepository>();
             services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddCors(x => x.AddPolicy("MyPolicy", y =>
             {
