@@ -22,6 +22,7 @@ namespace ComputerServiceMainApi.Reporitories.ComputerRepositories
             _context = context;
             _mapper = mapper;
         }
+
         public async Task AddComputer(ComputerInformation computerInformation)
         {
             var computer = _mapper.Map<Computer>(computerInformation);
@@ -32,13 +33,17 @@ namespace ComputerServiceMainApi.Reporitories.ComputerRepositories
 
         public async Task<IEnumerable<ComputerInformation>> GetComputers()
         {
-            var computers = await _context.Computers.ToListAsync();
+            var computers = await _context.Computers.
+                Include(x => x.Owner)
+                .ToListAsync();
             return _mapper.Map<IEnumerable<ComputerInformation>>(computers);
         }
 
         public async Task<ComputerInformation> GetComputer(int id)
         {
-            var computer = await _context.Computers.FirstOrDefaultAsync(x => x.ComputerId == id);
+            var computer = await _context.Computers.
+                Include(x => x.Owner)
+                .FirstOrDefaultAsync(x => x.ComputerId == id);
             return _mapper.Map<ComputerInformation>(computer);
         }
 

@@ -9,8 +9,8 @@ namespace ComputerServiceModels.Models.Entities
     {
         [Key]
         public int OwnerId { get; set; }
+        [EmailAddress]
         public string Email { get; set; }
-        [EmailAddress] 
         public string Password { get; set; }
         public string Name { get; set; }
     }
