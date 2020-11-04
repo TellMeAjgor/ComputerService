@@ -39,5 +39,19 @@ namespace ComputerServiceMainApi.Controllers
             var computer = await _repository.GetComputer(id);
             return Ok(computer);
         }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateComputer(ComputerInformation computerInformation)
+        {
+            await _repository.UpdateComputer(computerInformation);
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteComputer(int id)
+        {
+            await _repository.DeleteComputer(id);
+            return Ok();
+        }
     }
 }

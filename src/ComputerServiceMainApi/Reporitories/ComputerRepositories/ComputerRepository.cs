@@ -41,5 +41,21 @@ namespace ComputerServiceMainApi.Reporitories.ComputerRepositories
             var computer = await _context.Computers.FirstOrDefaultAsync(x => x.ComputerId == id);
             return _mapper.Map<ComputerInformation>(computer);
         }
+
+        public async Task UpdateComputer(ComputerInformation computerInformation)
+        {
+            var computer = _mapper.Map<Computer>(computerInformation);
+            _context.Update(computer);
+
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteComputer(int id)
+        {
+            var computer = await _context.Computers.FindAsync(id);
+            _context.Remove(computer);
+
+            await _context.SaveChangesAsync();
+        }
     }
 }
