@@ -7,6 +7,7 @@ using ComputerServiceMainApi.Data;
 using ComputerServiceModels.Models.Entities;
 using ComputerServiceModels.Models.Informations;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ComputerServiceMainApi.Reporitories.OwnerRepositories
 {
@@ -27,6 +28,19 @@ namespace ComputerServiceMainApi.Reporitories.OwnerRepositories
             await _context.Owners.AddAsync(owner);
 
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<OwnerInformation>> GetOwners()
+        {
+            var owners = await _context.Owners.ToListAsync();
+            return _mapper.Map<IEnumerable<OwnerInformation>>(owners);
+        }
+
+        public async Task<OwnerInformation> GetOwner(int id)
+        {
+            var owner = await _context.Owners.
+                FirstOrDefaultAsync(x => x.OwnerId == id);
+            return _mapper.Map<OwnerInformation>(owner);
         }
     }
 }

@@ -9,5 +9,7 @@ namespace ComputerServiceMainApi.Reporitories.OwnerRepositories
     public interface IOwnerRepository
     {
         Task AddOwner(OwnerInformation ownerInformation);
+        Task<IEnumerable<OwnerInformation>> GetOwners();
+        Task<OwnerInformation> GetOwner(int id);
     }
 }
