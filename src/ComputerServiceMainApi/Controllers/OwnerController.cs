@@ -25,5 +25,19 @@ namespace ComputerServiceMainApi.Controllers
             await _repository.AddOwner(ownerInformation);
             return Ok();
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetComputers()
+        {
+            var owners = await _repository.GetOwners();
+            return Ok(owners);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetComputer(int id)
+        {
+            var owner = await _repository.GetOwner(id);
+            return Ok(owner);
+        }
     }
 }
