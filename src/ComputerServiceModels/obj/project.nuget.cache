@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RJIBa7mTft8W1dsoBSGqABuF8dFVM+imsqEHM/XFiPVclTYgl0hTAL/V0y+1vqIfuXGg6YUTUQBinjq5zpdtGg==",
+  "dgSpecHash": "41WXieBCwyNyt56bEzGl0DMgaQdr88INJKZsOwRoRMBDK7ND8UN05udm/4w9bFnj6A5OH6DTrmvABhypJ96QhA==",
   "success": true,
-  "projectFilePath": "C:\\Projekty\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj",
+  "projectFilePath": "C:\\Projects\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",

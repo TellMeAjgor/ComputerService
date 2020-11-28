@@ -11,5 +11,7 @@ namespace ComputerServiceMainApi.Reporitories.OwnerRepositories
         Task AddOwner(OwnerInformation ownerInformation);
         Task<IEnumerable<OwnerInformation>> GetOwners();
         Task<OwnerInformation> GetOwner(int id);
+        Task UpdateOwner(OwnerInformation ownerInformation);
+        Task DeleteOwner(int id);
     }
 }

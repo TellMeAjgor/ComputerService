@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projekty\\ComputerService\\src\\ComputerServiceMainApi\\ComputerServiceMainApi.csproj": {}
+    "C:\\Projects\\ComputerService\\src\\ComputerServiceMainApi\\ComputerServiceMainApi.csproj": {}
   },
   "projects": {
-    "C:\\Projekty\\ComputerService\\src\\ComputerServiceMainApi\\ComputerServiceMainApi.csproj": {
+    "C:\\Projects\\ComputerService\\src\\ComputerServiceMainApi\\ComputerServiceMainApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projekty\\ComputerService\\src\\ComputerServiceMainApi\\ComputerServiceMainApi.csproj",
+        "projectUniqueName": "C:\\Projects\\ComputerService\\src\\ComputerServiceMainApi\\ComputerServiceMainApi.csproj",
         "projectName": "ComputerServiceMainApi",
-        "projectPath": "C:\\Projekty\\ComputerService\\src\\ComputerServiceMainApi\\ComputerServiceMainApi.csproj",
+        "projectPath": "C:\\Projects\\ComputerService\\src\\ComputerServiceMainApi\\ComputerServiceMainApi.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Projekty\\ComputerService\\src\\ComputerServiceMainApi\\obj\\",
+        "outputPath": "C:\\Projects\\ComputerService\\src\\ComputerServiceMainApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -26,9 +26,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Projekty\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj": {
-                "projectPath": "C:\\Projekty\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj"
+              "C:\\Projects\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj": {
+                "projectPath": "C:\\Projects\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj"
               }
             }
           }
@@ -41,6 +42,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -65,6 +67,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.9, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.11.4, )"
             }
           },
           "imports": [
@@ -85,18 +91,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projekty\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj": {
+    "C:\\Projects\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projekty\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj",
+        "projectUniqueName": "C:\\Projects\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj",
         "projectName": "ComputerServiceModels",
-        "projectPath": "C:\\Projekty\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj",
+        "projectPath": "C:\\Projects\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Projekty\\ComputerService\\src\\ComputerServiceModels\\obj\\",
+        "outputPath": "C:\\Projects\\ComputerService\\src\\ComputerServiceModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -111,6 +117,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -122,6 +129,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -148,7 +156,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
