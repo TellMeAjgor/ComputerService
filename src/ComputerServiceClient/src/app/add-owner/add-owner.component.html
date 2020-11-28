@@ -1,0 +1,25 @@
+<div class="container">
+  <form [formGroup]="register">
+    <mat-form-field appearance="outline">
+      <mat-label></mat-label>
+      <input matInput formControlName="email" placeholder="email">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label></mat-label>
+      <input matImput formControlName="password" matInput placeholder="password">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label></mat-label>
+      <input matImput formControlName="name" matInput placeholder="name">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </form>
+    <button mat-raised-button (click)="AddOwner()">Enter</button>
+</div>

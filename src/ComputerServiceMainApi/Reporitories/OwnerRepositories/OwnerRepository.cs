@@ -42,5 +42,21 @@ namespace ComputerServiceMainApi.Reporitories.OwnerRepositories
                 FirstOrDefaultAsync(x => x.OwnerId == id);
             return _mapper.Map<OwnerInformation>(owner);
         }
+
+        public async Task UpdateOwner(OwnerInformation ownerInformation)
+        {
+            var owner = _mapper.Map<Owner>(ownerInformation);
+            _context.Update(owner);
+
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteOwner(int id)
+        {
+            var owner = await _context.Owners.FindAsync(id);
+            _context.Remove(owner);
+
+            await _context.SaveChangesAsync();
+        }
     }
 }

@@ -1311,11 +1311,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projekty\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj",
+      "projectUniqueName": "C:\\Projects\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj",
       "projectName": "ComputerServiceModels",
-      "projectPath": "C:\\Projekty\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj",
+      "projectPath": "C:\\Projects\\ComputerService\\src\\ComputerServiceModels\\ComputerServiceModels.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Projekty\\ComputerService\\src\\ComputerServiceModels\\obj\\",
+      "outputPath": "C:\\Projects\\ComputerService\\src\\ComputerServiceModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1330,6 +1330,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "projectReferences": {}
         }
       },
@@ -1341,6 +1342,7 @@
     },
     "frameworks": {
       "netstandard2.0": {
+        "targetAlias": "netstandard2.0",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
@@ -1367,7 +1369,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
