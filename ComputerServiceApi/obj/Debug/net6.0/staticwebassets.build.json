@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "YJb2kHkgvyW7PgVbFBQ8ntfreoDba31/vANAVYPZkrs=",
+  "Source": "ComputerServiceApi",
+  "BasePath": "_content/ComputerServiceApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
