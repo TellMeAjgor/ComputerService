@@ -9,6 +9,8 @@ namespace ComputerService.MappingProfile
         public AutoMapperProfile() 
         {
             CreateMap<User, UserInformation>().ReverseMap();
+            CreateMap<Computer, ComputerInformation>().ReverseMap();
+            CreateMap<UserComputers, UserComputersInformation>().ReverseMap();
         }  
     }
 }
